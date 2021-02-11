@@ -14,3 +14,9 @@ F4Life é uma empresa de aluguéis de repúblicas para universitários. Similar 
 * *styles:* Estilos CSS separado por categoria
 * *images:* Imagens e artes
 * *icons:* Icones e detalhes
+
+###  ROAD MAP
+[Scrum Board](https://trello.com/b/RWI7YcnM/f4life)
+
+### Prototype
+[Figma design v1.0](https://www.figma.com/proto/we42PgpMRbzDFYtrWTuQRc/Untitled?node-id=0%3A3&frame-preset-name=Desktop&scaling=min-zoom)
