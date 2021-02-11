@@ -19,4 +19,4 @@ F4Life é uma empresa de aluguéis de repúblicas para universitários. Similar 
 [Scrum Board](https://trello.com/b/RWI7YcnM/f4life)
 
 ### Prototype
-[Figma design v1.0](https://www.figma.com/proto/we42PgpMRbzDFYtrWTuQRc/Untitled?node-id=0%3A3&frame-preset-name=Desktop&scaling=min-zoom)
+[Figma design v1.1](https://www.figma.com/proto/we42PgpMRbzDFYtrWTuQRc/Untitled?node-id=0%3A3&frame-preset-name=Desktop&scaling=min-zoom)
