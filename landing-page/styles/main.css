@@ -19,7 +19,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
     list-style: none;
     text-decoration: none;
 }
@@ -49,9 +49,48 @@ body {
 }
 
 .container > header {
+    background-color: var(--logoAzulEscuro);
 }
 
+/* container principal do conteudo principal */
 .main-container {
+    width: 100%;
+    padding: 53px;
+}
+
+/* secao com todos os artigos */
+section {
+}
+
+/* cada tela/quebra eh um artigo, separado aqui por numero */
+
+/* duas cores para o fundo do conteudo, alternando */
+
+article:nth-of-type(odd) {
+    background-color: var(--fundo);
+}
+
+/* este eh o primeiro conteudo*/
+article:first-of-type {
+}
+
+article:nth-of-type(2) {
+}
+
+article:nth-of-type(3) {
+}
+
+article:nth-of-type(4) {
+}
+
+article:nth-of-type(5) {
+}
+
+article:nth-of-type(6) {
+}
+
+/* este eh o ultimo conteudo da pagina */
+article:last-of-type {
 }
 
 .container > footer {
