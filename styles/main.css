@@ -3,6 +3,11 @@
  * @Description: main web site style
  */
 
+/* variables */
+@import url(./variables.css);
+
+/* reset */
+
 * {
     margin: 0;
     padding: 0;

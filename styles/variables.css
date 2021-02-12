@@ -1,0 +1,10 @@
+/* CSS Variables */
+
+/* Colors */
+
+:root {
+    --logoAzulEscuro: #1d2038;
+    --logoAzulClaro: #45e3d6;
+    --logoBranco: #fff;
+    --texto: #000;
+}
