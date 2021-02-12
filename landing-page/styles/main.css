@@ -50,6 +50,27 @@ body {
 
 .container > header {
     background-color: var(--logoAzulEscuro);
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 116px;
+}
+
+header > img {
+    width: 211px;
+}
+
+header ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+header li {
+}
+
+header a {
+    color: white;
 }
 
 /* container principal do conteudo principal */
