@@ -1,0 +1,58 @@
+/* F4LIFE project
+ * @name: style.css
+ * @Description: main web site style
+ */
+
+/* CSS Variables */
+/* Colors */
+
+:root {
+    --logoAzulEscuro: #1d2038;
+    --logoAzulClaro: #45e3d6;
+    --logoBranco: #fff;
+    --texto: #000;
+    --fundo: rgba(196, 196, 196, 0.2);
+}
+
+/* reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* tipografy */
+
+h2 {
+    color: var(--texto);
+}
+
+/* links */
+
+/* layout */
+
+body {
+    width: 100vw;
+    background-color: var(--fundo);
+}
+
+.container {
+    width: 100%;
+    max-width: 1366px;
+    min-width: 300px;
+    height: 500px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.container > header {
+}
+
+.main-container {
+}
+
+.container > footer {
+}
