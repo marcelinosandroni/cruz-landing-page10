@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="../styles/main.css" />
 
         <!-- pages styles for this page only -->
-        <link rel="stylesheet" href="../styles/pages.css" />
+        <link rel="stylesheet" href="../styles/contato.css" />
     </head>
     <body>
         <!-- 
@@ -23,19 +23,20 @@
         <div class="container">
             <!-- HEADER begin -->
             <header class="header">
+              <a href="../index.html">
                 <img
                     class="logo"
                     src="../images/logo-cortado.png"
                     alt="Logo F4LIFE Moradias Universitárias"
-                />
+            /></a>
                 <nav class="menu">
                     <ul>
                         <li>
-                            <a href="test.html">Repúplicas</a>
+                          <a href="../pages/republicas.html">Repúblicas</a>
                         </li>
-                        <li><a href="./pages/reforma.html">Reforma</a></li>
-                        <li><a href="./pages/sobre.html">Sobre</a></li>
-                        <li><a href="./pages/contato.html">Contato</a></li>
+                        <li><a href="../pages/reforma.html">Reforma</a></li>
+                        <li><a href="../pages/sobre.html">Sobre</a></li>
+                        <li><a href="../pages/contato.html">Contato</a></li>
                         <li>
                             <a href=""
                                 ><img
@@ -55,22 +56,39 @@
                 cada bloco de conteudo eh um <article>-->
 
                     <article>
-                        <h2>Aqui o conteudo do bloco 1</h2>
-                        <p>Aqui o paragrafo</p>
-                        <img src="../images/estudo.jpg" alt="" />
-                    </article>
+                        <div class="title-center">
+                            <h2>Entre em Contato</h2>
+                          </div>    
 
-                    <article>
-                        <h2>Aqui o conteudo do bloco 2</h2>
-                        <p>Aqui o paragrafo</p>
-                        <img src="../images/estudo.jpg" alt="" />
+                        <form action="" class="form-monster">
+                            <label for="nome">Nome:</label>
+                            <input
+                              id="nome"
+                              type="text"
+                              name="nome"
+                              placeholder="Digite seu nome"
+                            />
+            
+                            <label for="nome">Email:</label>
+                            <input
+                              id="nome"
+                              type="text"
+                              name="nome"
+                              placeholder="Digite seu Email"
+                            />
+            
+                            <label for="nome">Assunto:</label>
+                            <input
+                              id="nome"
+                              type="text"
+                              name="nome"
+                              placeholder="Digite o assunto"
+                            />                
+                            <textarea placeholder="Digite sua mensagem"></textarea>
+                            <input type="submit" value="Enviar" />
+                          </form>
                     </article>
-
-                    <article>
-                        <h2>Aqui o conteudo do bloco 3</h2>
-                        <p>Aqui o paragrafo</p>
-                        <img src="../images/estudo.jpg" alt="" />
-                    </article>
+                   
                     <!-- CONTENT end -->
                 </section>
             </main>
