@@ -8,40 +8,56 @@
 .title-center {
     /* coloca o titulo do bloco no centro sem nada ao lado */
     text-align: center;
-    margin: 20px auto;
+    flex-basis: 100%;
 }
 
 .title-left {
+    text-align: left;
+    flex-basis: 50%;
 }
 
 .title-right {
+    text-align: right;
+    flex-basis: 50%;
+}
+
+.title-center,
+.title-left,
+.title-right {
+    margin: 20px auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 .form-small {
+    width: 300px;
+    height: 300px;
 }
 
 .form-regular {
+    width: 300px;
+    height: 300px;
 }
 
 .form-big {
+    width: 80%;
+    height: 400px;
 }
 
-.form-big {
+.img-block {
 }
 
-.img-blocointeiro {
-}
-
-.icone-container {
+.icon-container {
     /* faz todos os icones/imgs dentro ficar pequeno */
 }
 
-.icone-container img {
+.icon-container img {
     width: 50px;
     left: 50px;
 }
 
-.icone-grande {
+.icon-big {
     /* faz o icone ficar maior que o padrao de 50px */
     width: 100px;
     height: 100px;
@@ -55,4 +71,26 @@
 .cards-medium {
 }
 .cards-small {
+}
+
+.cards-quality {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards-quality img {
+    width: 50px;
+    height: 50px;
+}
+
+.cards-quality > div {
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.cards-quality > div > div {
+    background-color: var(--fundoCard);
 }
