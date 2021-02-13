@@ -183,12 +183,6 @@ article:nth-of-type(even) {
 
 /* classes para reutilizar nos blocos de conteudo */
 
-.title-center {
-    /* coloca o titulo do bloco no centro sem nada ao lado */
-    text-align: center;
-    margin: 20px auto;
-}
-
 .footer {
     width: 100%;
     display: flex;
