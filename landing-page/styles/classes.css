@@ -1,9 +1,23 @@
-/* Arquivo com classes para reutilizacao em todo o site do app
+/* @CLASSES
+ * Arquivo com classes para reutilizacao em todo o site do app
  * cada classe aplica um estilo ou define um elemento
  * use a classes no HTML e ira aplicar o efeti ode imadito
  * aqui o estilo fica padronizado
  * mudar detalhezinhos no CSS da pagina especifica
- * para ficar mais facil a organizacao */
+ * para ficar mais facil a organizacao
+ */
+
+ .flex-box{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-flow: row wrap;
+
+ }
+
+ .flex-box > *{
+   margin: 30px auto;
+ }
 
 .title-center {
     /* coloca o titulo do bloco no centro sem nada ao lado */
@@ -30,20 +44,144 @@
     justify-content: center;
 }
 
+.title-banner {
+  width: 100%;
+  background-color: var(--logoAzulEscuro);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 150px;
+}
+
+.title-banner h2,
+.title-banner p {
+  color: white;
+  text-align: center;
+}
+
+/* formularios */
+
+.item-container{}
+
 .form-small {
-    width: 300px;
-    height: 300px;
+    /* width: 20%; */
+    /* height: 300px; */
+
+    
+      width: 10%;
+      height: 10%;
+      min-width: 300px;
+      min-height: 300px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--fundo);
+      border: 3px solid #1d2038;
+      border-radius: 40px; 
+      
 }
 
-.form-regular {
-    width: 300px;
+.form-medium {
+    width: 33%;
     height: 300px;
+    justify-content: space-around;
+    flex-flow: row wrap;
 }
 
-.form-big {
-    width: 80%;
-    height: 400px;
+.form-medium label {
+  width: 20%;
+
 }
+
+.form-medium input {
+  width: 70%;
+
+}
+
+.form-large {
+    width: 50%;
+    height: 400px;    
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+
+.form-large label {
+  width: 20%;
+
+}
+
+.form-large input {
+  width: 70%;
+
+}
+
+.form-giant {
+  width: 100%;
+  height: 500px;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.form-giant textarea {
+  width: 100%;
+  height: 300px;
+  color: black;
+  font-size: 30px;
+  
+}
+
+.form-giant textarea::placeholder {
+  font-size: 30px;
+  color: black;
+}
+
+.form-monster {
+  width: 70%;
+  height: 700px;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
+
+}
+
+.form-monster label {
+  width: 30%;
+  margin-left: auto;
+  text-align: auto;
+
+}
+
+
+.form-monster input {
+  width: 50%;
+  margin-right: auto;  
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+
+}
+
+.form-monster input[type=submit] {
+  margin: auto
+}
+
+.form-monster textarea {
+  width: 85%;
+  height: 300px;
+  color: black;
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  
+}
+
+.form-monster textarea::placeholder {
+  font-size: 30px;
+  color: black;
+}
+
+/* botoes */
 
 .img-block {
 }
@@ -57,40 +195,168 @@
     left: 50px;
 }
 
-.icon-big {
+.icon-medium {
+  width: 80px;
+  height: 80px;
+}
+
+.icon-large {
     /* faz o icone ficar maior que o padrao de 50px */
     width: 100px;
     height: 100px;
 }
 
 .card-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  margin: 50px auto;
 }
 
-.cards-small {
-}
-.cards-medium {
-}
-.cards-small {
-}
-
-.cards-quality {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+.card-small {
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+  border-radius: 10px;  
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;    
 }
 
-.cards-quality img {
-    width: 50px;
-    height: 50px;
+.card-small img {
+  width: 50px;  
+  border-radius: 7px 0 0 0; 
+
 }
 
-.cards-quality > div {
-    width: 200px;
-    height: 200px;
-    border: 3px solid black;
-    border-radius: 10px;
+.card-small h3 {
+  font-size: 30px;
+  line-height: 50px;
+  flex-grow: 1;
+  text-align: center;  
+  border-radius: 0 7px 0 0; 
 }
 
-.cards-quality > div > div {
-    background-color: var(--fundoCard);
+.card-small img,
+.card-small h3 {
+  background-color: var(--fundoCard);  
+  height: 50px;
+}
+
+.card-small p {
+  flex-basis: 100%;
+  font-size: 24px;
+
+}
+
+.card-medium {
+  width: 35%;
+  height: 500px;
+  border: 3px solid black;
+  border-radius: 30px;  
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;  
+  
+}
+
+.card-medium img {
+  width: 100px;  
+  border-radius: 25px 0 0 0; 
+}
+
+.card-medium h3 {
+  font-size: 30px;
+  line-height: 100px;
+  flex-grow: 1;
+  text-align: center;  
+  border-radius: 0 25px 0 0; 
+}
+
+.card-medium img,
+.card-medium h3 {
+  background-color: var(--fundoCard); 
+    
+  height: 100px;
+}
+
+.card-medium p {
+  flex-basis: 100%;
+  font-size: 36px;
+
+}
+
+.card-house--small {}
+
+.card-house--medium {
+  width: 40%;
+  height: 520px;
+  border: 3px solid black;
+  border-radius: 10px;  
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-flow: row wrap;  
+
+}
+
+.card-house--medium img {
+  flex-basis: 100%;
+  width: 100%;
+  height: 70%;
+  border-radius: 8px 8px 0 0;  
+  box-shadow: 0 0 10px black;
+}
+
+.card-house--medium p:first-of-type {
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+.card-house--large {}
+
+
+/* Images classes */
+
+.img-full {
+  width: 100%;  
+}
+
+.img-left {}
+
+.img-right {}
+
+/* article classes */
+.article-full {
+  padding: 0;
+  position: relative;
+}
+
+/* dialog box */
+
+.card-floating--left {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 300px;
+  left: 200px;
+  background-color: var(--fundoCard);
+  border-radius: 10px;
+}
+
+.card-floating--right {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 300px;
+  right: 200px;
+  background-color: var(--fundoCard);
+  border-radius: 10px;
+}
+
+.box-paddin {
+  padding: 0 10%;
 }

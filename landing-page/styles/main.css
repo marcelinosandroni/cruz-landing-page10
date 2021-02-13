@@ -13,7 +13,7 @@
     --logoBranco: #fff;
     --texto: #000;
     --fundo: rgba(196, 196, 196, 0.2);
-    --fundoCard: #6187c8;
+    --fundoCard: #6187c8;    
 }
 
 /* classes com utilidades definidas para todo o site */
@@ -65,16 +65,20 @@ li a {
     color: white;
 }
 
+/* images */
+
+
+
 /* elements */
 
 form {
-    width: 322px;
+    /* width: 322px;
     height: 331px;
     min-width: 300px;
-    min-height: 300px;
+    min-height: 300px; */
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    
+    
     align-items: center;
     background-color: var(--fundo);
     border: 3px solid #1d2038;
