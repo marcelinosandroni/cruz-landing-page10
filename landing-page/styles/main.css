@@ -7,7 +7,8 @@
 /* Colors */
 
 :root {
-    --logoAzulEscuro: #1d2038;
+    /*--logoAzulEscuro: #1d2038;*/
+    --logoAzulEscuro: #161a35;
     --logoAzulClaro: #45e3d6;
     --logoBranco: #fff;
     --texto: #000;
@@ -32,6 +33,7 @@ h1,
 h2,
 h3,
 p {
+    color: black;
 }
 
 h1 {
@@ -52,62 +54,110 @@ p {
 /* links */
 
 a {
-    font-size: 30px;
+    font-size: 24px;
+}
+
+/* lists */
+li a {
+    color: white;
+}
+
+/* elements */
+
+form {
+    width: 322px;
+    height: 331px;
+    min-width: 300px;
+    min-height: 300px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fundo);
+    border: 3px solid #1d2038;
+    border-radius: 40px;
+}
+
+form > * {
+    margin: 20px 0;
+}
+
+label {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+input {
+    background-color: white;
+    border: 3px solid #1d2038;
+    border-radius: 10px;
+    width: 212px;
+    height: 52px;
+}
+
+input::placeholder {
+    font-size: 24px;
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: var(--fundoCard);
+    color: white;
+    font-size: 24px;
 }
 
 /* layout */
 
 body {
-    width: 100vw;
     background-color: var(--fundo);
 }
 
 .container {
     width: 100%;
     max-width: 1366px;
-    min-width: 300px;
+    min-width: 350px;
     height: 500px;
     background-color: white;
     margin: 0 auto;
 }
 
-.container > header {
+.header {
     background-color: var(--logoAzulEscuro);
     height: 70px;
     display: flex;
     justify-content: space-between;
-    padding: 0 116px;
+    align-items: center;
+    padding: 0 5%;
 }
 
-header > img {
+.logo {
     width: 211px;
     height: 70px;
 }
 
-header ul {
+.menu {
     width: 50%;
+}
+
+.menu ul {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
 }
 
-header li {
-}
-
-header li img {
+.menu img {
     width: 50px;
     height: 50px;
 }
 
-header a {
+.menu a {
     color: white;
 }
 
 /* container principal do conteudo principal */
 .main-container {
     width: 100%;
-    height: 700px;
 }
 
 /* secao com todos os artigos */
@@ -119,11 +169,15 @@ section {
 article {
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
     padding: 53px;
     background-color: white;
 }
 
 .title-center {
+    text-align: center;
+    margin: 20px auto;
 }
 
 /* duas cores para o fundo do conteudo, alternando */
@@ -134,8 +188,8 @@ article:nth-of-type(even) {
 
 /* este eh o primeiro conteudo*/
 article:first-of-type img {
-    width: 700px;
-    height: 300px;
+    width: 764px;
+    height: 334px;
 }
 
 article:nth-of-type(2) {
@@ -187,5 +241,67 @@ article:nth-of-type(6) {
 article:last-of-type {
 }
 
-.container > footer {
+.footer {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-items: space-around;
+    align-items: center;
+    background-color: var(--logoAzulEscuro);
+}
+
+.footer > * {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer p,
+.footer a {
+    color: white;
+}
+
+.description p {
+    font-size: 32px;
+    font-style: italic;
+}
+
+.description img {
+    width: 316px;
+    height: 245px;
+}
+
+.company-data {
+    font-size: 24px;
+    text-align: center;
+}
+
+.social-network {
+    display: flex;
+    justify-items: space-around;
+    align-items: center;
+}
+.social-network img {
+    width: 50px;
+    height: 50px;
+    margin: 0 30px;
+}
+
+.legal-info {
+}
+
+.legal-info ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.legal-info a {
+    font-size: 24px;
+}
+
+@media screen and (max-width: 400px) {
+    form {
+        width: 80%;
+    }
 }
