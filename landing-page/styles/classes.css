@@ -6,7 +6,9 @@
  * para ficar mais facil a organizacao */
 
 .title-center {
-    /* Poe o titulo no centro sozinho */
+    /* coloca o titulo do bloco no centro sem nada ao lado */
+    text-align: center;
+    margin: 20px auto;
 }
 
 .title-left {
