@@ -16,6 +16,9 @@
     --fundoCard: #6187c8;
 }
 
+/* classes com utilidades definidas para todo o site */
+@import url(./classes.css);
+
 /* reset */
 
 * {
@@ -160,11 +163,8 @@ body {
     width: 100%;
 }
 
-/* secao com todos os artigos */
-section {
-}
-
 /* cada tela/quebra eh um artigo, separado aqui por numero */
+/* configuracoes para artigos de todo o site */
 
 article {
     display: flex;
@@ -175,70 +175,18 @@ article {
     background-color: white;
 }
 
-.title-center {
-    text-align: center;
-    margin: 20px auto;
-}
-
 /* duas cores para o fundo do conteudo, alternando */
 
 article:nth-of-type(even) {
     background-color: var(--fundo);
 }
 
-/* este eh o primeiro conteudo*/
-article:first-of-type img {
-    width: 764px;
-    height: 334px;
-}
+/* classes para reutilizar nos blocos de conteudo */
 
-article:nth-of-type(2) {
-}
-
-article:nth-of-type(2) > img {
-    width: 543px;
-    height: 371px;
-}
-
-.title-left {
-}
-
-.cards-quality {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.cards-quality img {
-    width: 50px;
-    height: 50px;
-}
-
-.cards-quality > div {
-    width: 200px;
-    height: 200px;
-    border: 3px solid black;
-    border-radius: 10px;
-}
-
-.cards-quality > div > div {
-    background-color: var(--fundoCard);
-}
-
-article:nth-of-type(3) {
-}
-
-article:nth-of-type(4) {
-}
-
-article:nth-of-type(5) {
-}
-
-article:nth-of-type(6) {
-}
-
-/* este eh o ultimo conteudo da pagina */
-article:last-of-type {
+.title-center {
+    /* coloca o titulo do bloco no centro sem nada ao lado */
+    text-align: center;
+    margin: 20px auto;
 }
 
 .footer {

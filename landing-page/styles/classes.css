@@ -1,0 +1,56 @@
+/* Arquivo com classes para reutilizacao em todo o site do app
+ * cada classe aplica um estilo ou define um elemento
+ * use a classes no HTML e ira aplicar o efeti ode imadito
+ * aqui o estilo fica padronizado
+ * mudar detalhezinhos no CSS da pagina especifica
+ * para ficar mais facil a organizacao */
+
+.title-center {
+    /* Poe o titulo no centro sozinho */
+}
+
+.title-left {
+}
+
+.title-right {
+}
+
+.form-small {
+}
+
+.form-regular {
+}
+
+.form-big {
+}
+
+.form-big {
+}
+
+.img-blocointeiro {
+}
+
+.icone-container {
+    /* faz todos os icones/imgs dentro ficar pequeno */
+}
+
+.icone-container img {
+    width: 50px;
+    left: 50px;
+}
+
+.icone-grande {
+    /* faz o icone ficar maior que o padrao de 50px */
+    width: 100px;
+    height: 100px;
+}
+
+.card-container {
+}
+
+.cards-small {
+}
+.cards-medium {
+}
+.cards-small {
+}

@@ -1,0 +1,70 @@
+/* CSS do conteudo da pagina inicial
+ * todo o estilo principal ja esta no arquivo main.css
+ * aqui eh apenas coisinhas diferentes que podem mudar e afetam
+ * apenas o conteudo da pagina atual
+ */
+
+/* classes com utilidades definidas para todo o site */
+@import url(./classes.css);
+
+/* este eh o primeiro bloco de conteudo*/
+article:first-of-type {
+}
+
+/* alterando a imagem do primeiro bloco */
+article:first-of-type img {
+    width: 764px;
+    height: 334px;
+}
+
+/* este eh o segundo bloco de conteudo */
+article:nth-of-type(2) {
+}
+
+/* alterando a imagem do segundo bloco */
+article:nth-of-type(2) > img {
+    width: 543px;
+    height: 371px;
+}
+
+.cards-quality {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cards-quality img {
+    width: 50px;
+    height: 50px;
+}
+
+.cards-quality > div {
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.cards-quality > div > div {
+    background-color: var(--fundoCard);
+}
+
+/* este eh o segundo bloco de conteudo */
+article:nth-of-type(3) {
+}
+
+/* este eh o segundo bloco de conteudo */
+article:nth-of-type(4) {
+}
+
+/* este eh o segundo bloco de conteudo */
+article:nth-of-type(5) {
+}
+
+/* este eh o segundo bloco de conteudo */
+article:nth-of-type(6) {
+}
+
+/* este eh o ultimo bloco de conteudo */
+article:last-of-type {
+}
