@@ -29,4 +29,4 @@ F4Life é uma empresa de aluguéis de repúblicas para universitários. Similar 
 
 ### Prototype
 
-[Figma design v1.3](https://www.figma.com/proto/we42PgpMRbzDFYtrWTuQRc/Web-Site-Desktop?node-id=0%3A3&scaling=min-zoom)
+[Figma Design v1.3](https://www.figma.com/proto/we42PgpMRbzDFYtrWTuQRc/Web-Site-Desktop?node-id=0%3A3&scaling=min-zoom)
