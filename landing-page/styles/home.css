@@ -1,7 +1,10 @@
 /* CSS do conteudo da pagina inicial
  * todo o estilo principal ja esta no arquivo main.css
+ * e tambem os elementos esta em nossa biblioteca de classes.css
  * aqui eh apenas coisinhas diferentes que podem mudar e afetam
  * apenas o conteudo da pagina atual
+ *
+ * Tem bastante comentario mas eh para ficar organizado e documentado
  */
 
 /* classes com utilidades definidas para todo o site */
@@ -13,8 +16,8 @@ article:first-of-type {
 
 /* alterando a imagem do primeiro bloco */
 article:first-of-type img {
-    width: 764px;
-    height: 334px;
+  width: 764px;
+  height: 334px;
 }
 
 /* este eh o segundo bloco de conteudo */
@@ -23,27 +26,78 @@ article:nth-of-type(2) {
 
 /* alterando a imagem do segundo bloco */
 article:nth-of-type(2) > img {
-    width: 543px;
-    height: 371px;
+  width: 543px;
+  height: 371px;
 }
 
-
-/* este eh o segundo bloco de conteudo */
+/* este eh o terceiro bloco de conteudo */
 article:nth-of-type(3) {
 }
 
-/* este eh o segundo bloco de conteudo */
+/* este eh o quarto bloco de conteudo */
 article:nth-of-type(4) {
 }
 
-/* este eh o segundo bloco de conteudo */
+/* este eh o quinto bloco de conteudo */
 article:nth-of-type(5) {
 }
 
-/* este eh o segundo bloco de conteudo */
+/* este eh o sexto bloco de conteudo */
 article:nth-of-type(6) {
+}
+
+/* este eh o setimo bloco de conteudo */
+article:nth-of-type(7) {
+  height: 800px;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+article:nth-of-type(7) > img {
+  width: 577px;
+  height: 433px;
 }
 
 /* este eh o ultimo bloco de conteudo */
 article:last-of-type {
+}
+
+.blog-img,
+.dev-img {
+  width: 70%;
+  height: 300px;
+  margin: 20px auto;
+  display: block;
+}
+
+.blog-link,
+.dev-link {
+  width: 30%;
+  display: block;
+  margin: 20px auto 50px auto;
+}
+
+.blog-link a,
+.dev-link a {
+  text-align: center;
+  margin: 20px auto;
+  text-decoration: black underline;
+}
+
+.blog-link a:hover,
+.dev-link a:hover {
+  color: white;
+  text-decoration: blue underline;
+}
+
+.blog-link:hover,
+.dev-link:hover {
+  background-color: var(--logoFundoEscuro);
+}
+
+.article-blog {
+  background-color: white;
+}
+
+.article-dev {
+  background-color: white;
 }

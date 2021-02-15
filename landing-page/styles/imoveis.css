@@ -10,14 +10,18 @@ article:first-of-type .card-container {
 }
 
 .form-large {
+  margin-top: 50px;
   width: 80%;
+  display: grid;
+  grid: repeat(4, 1fr) / repeat(4, 1fr);
+  place-items: center;
 }
 
 .form-large label {
-  flex-basis: 20%;
+  margin: 0;
 }
 
 .form-large input,
 .form-large select {
-  flex-basis: 25%;
+  margin: 0;
 }

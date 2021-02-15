@@ -1,47 +1,84 @@
 /* @CLASSES
  * Arquivo com classes para reutilizacao em todo o site do app
  * cada classe aplica um estilo ou define um elemento
- * use a classes no HTML e ira aplicar o efeti ode imadito
- * aqui o estilo fica padronizado
- * mudar detalhezinhos no CSS da pagina especifica
+ * use a classes no HTML e ira aplicar o estilo de imediato
+ * aqui o estilo fica padronizado, e pode
+ * mudar detalhezinhos no CSS da pagina especifica caso precise
  * para ficar mais facil a organizacao
+ *
+ * PARA VER TODOS ELEMENTOS DE NOSSA BIBLIOTECA DE CLASSES
+ * ACESSE A PAGINA CLASSES.HTML
+ *
+ * Se achar mais facil pode apenas copiar o HTML do elemento
  */
 
- .flex-box{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-   flex-flow: row wrap;
+/* magica da margin */
 
- }
+.m {
+  margin: 50px;
+}
 
- .flex-box > *{
-   margin: 30px auto;
- }
+.mt100 {
+  margin-top: 100px;
+}
+
+/* Cor de fundo izi */
+
+.fundo-branco {
+  background-color: white;
+}
+
+.fundo-cinza {
+  background-color: var(--fundoCard);
+}
+
+.fundo-azul {
+  background-color: var(--logoAzulEscuro);
+}
+
+.cor-branca > * {
+  color: white;
+}
+
+/* Containers */
+
+.flex-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.item-container {
+}
+
+.flex-box > * {
+  margin: 30px auto;
+}
 
 .title-center {
-    /* coloca o titulo do bloco no centro sem nada ao lado */
-    text-align: center;
-    flex-basis: 100%;
+  /* coloca o titulo do bloco no centro sem nada ao lado */
+  text-align: center;
+  flex-basis: 100%;
 }
 
 .title-left {
-    text-align: left;
-    flex-basis: 50%;
+  text-align: left;
+  flex-basis: 50%;
 }
 
 .title-right {
-    text-align: right;
-    flex-basis: 50%;
+  text-align: right;
+  flex-basis: 50%;
 }
 
 .title-center,
 .title-left,
 .title-right {
-    margin: 20px auto;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
 }
 
 .title-banner {
@@ -60,125 +97,146 @@
   text-align: center;
 }
 
+/* um pouco de espaco pra o titulo que vier depois do banner */
+.title-banner + .title-center,
+.title-banner + .title-left,
+.title-banner + .title-right,
+.card-house--small + .title-center,
+.card-house--medium + .title-center,
+.card-house--large + .title-center {
+  margin-top: 80px;
+}
+
+/* paragrafos */
+
+.textao {
+  margin: 20px auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  flex-basis: 100%;
+}
+
+.textao p {
+  text-align: left;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+/* listas */
+ul.lista-grande {
+  list-style: square;
+  margin: 30px auto;
+}
+
+.lista-grande li {
+  list-style: square;
+  font-size: 30px;
+  margin: 20px auto;
+}
+
 /* formularios */
 
-.item-container{}
+/* aqui o nome de todos os elementos formularios */
+
+.form-small,
+.form-medium,
+.form-giant,
+.form-large,
+.form-monster {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-small > *,
+.form-medium > *,
+.form-giant > *,
+.form-large > * {
+  margin: 20px 0;
+}
+
+.form-monster > * {
+  margin: 0;
+}
 
 .form-small {
-    /* width: 20%; */
-    /* height: 300px; */
-
-    
-      width: 10%;
-      height: 10%;
-      min-width: 300px;
-      min-height: 300px;
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-      background-color: var(--fundo);
-      border: 3px solid #1d2038;
-      border-radius: 40px; 
-      
-}
-
-.form-medium {
-    width: 33%;
-    height: 300px;
-    justify-content: space-around;
-    flex-flow: row wrap;
-}
-
-.form-medium label {
-  width: 20%;
-
-}
-
-.form-medium input {
-  width: 70%;
-
+  width: 10%;
+  height: 10%;
+  min-width: 300px;
+  min-height: 300px;
+  flex-flow: column nowrap;
+  justify-content: center;
+  border-radius: 40px;
 }
 
 .form-large {
-    width: 50%;
-    height: 400px;    
-    justify-content: space-around;
-    flex-flow: row wrap;
+  width: 50%;
+  height: 400px;
 }
 
-
-.form-large label {
-  width: 20%;
-
-}
-
-.form-large input {
-  width: 70%;
-
+.form-medium {
+  width: 33%;
+  height: 300px;
 }
 
 .form-giant {
-  width: 100%;
+  width: 70%;
   height: 500px;
-  justify-content: space-around;
-  flex-flow: row wrap;
-}
-
-.form-giant textarea {
-  width: 100%;
-  height: 300px;
-  color: black;
-  font-size: 30px;
-  
-}
-
-.form-giant textarea::placeholder {
-  font-size: 30px;
-  color: black;
 }
 
 .form-monster {
+  /* Esse eh monstrao mesmo */
   width: 70%;
-  height: 700px;
-  justify-content: space-around;
-  flex-flow: row wrap;
-  align-items: center;
+  height: 800px;
+}
 
+.form-medium label,
+.form-large label {
+  width: 20%;
 }
 
 .form-monster label {
   width: 30%;
-  margin-left: auto;
-  text-align: auto;
-
 }
 
+.form-medium input,
+.form-large input,
+.form-large select {
+  width: 70%;
+}
 
 .form-monster input {
   width: 50%;
-  margin-right: auto;  
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
-
+  margin-right: auto;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-.form-monster input[type=submit] {
-  margin: auto
+.form-monster input[type="submit"] {
+  margin: auto;
+}
+
+.form-giant textarea,
+.form-monster textarea {
+  width: 85%;
+  font-size: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-giant textarea {
+  height: 250px;
 }
 
 .form-monster textarea {
-  width: 85%;
   height: 300px;
-  color: black;
-  font-size: 30px;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
-  
 }
 
+.form-giant textarea::placeholder,
 .form-monster textarea::placeholder {
   font-size: 30px;
-  color: black;
 }
 
 /* botoes */
@@ -187,12 +245,12 @@
 }
 
 .icon-container {
-    /* faz todos os icones/imgs dentro ficar pequeno */
+  /* faz todos os icones/imgs dentro ficar pequeno */
 }
 
 .icon-container img {
-    width: 50px;
-    left: 50px;
+  width: 50px;
+  left: 50px;
 }
 
 .icon-medium {
@@ -201,9 +259,9 @@
 }
 
 .icon-large {
-    /* faz o icone ficar maior que o padrao de 50px */
-    width: 100px;
-    height: 100px;
+  /* faz o icone ficar maior que o padrao de 50px */
+  width: 100px;
+  height: 100px;
 }
 
 .card-container {
@@ -214,120 +272,186 @@
   margin: 50px auto;
 }
 
-.card-small {
-  width: 200px;
-  height: 200px;
+.card-small,
+.card-medium,
+.card-large {
   border: 3px solid black;
-  border-radius: 10px;  
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-flow: row wrap;    
+  flex-flow: row wrap;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card-small {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
 }
 
 .card-small img {
-  width: 50px;  
-  border-radius: 7px 0 0 0; 
-
+  width: 50px;
+  border-radius: 7px 0 0 0;
 }
 
 .card-small h3 {
   font-size: 30px;
   line-height: 50px;
-  flex-grow: 1;
-  text-align: center;  
-  border-radius: 0 7px 0 0; 
+  flex: 1 0 70%;
+  text-align: center;
+  border-radius: 0 7px 0 0;
 }
 
 .card-small img,
 .card-small h3 {
-  background-color: var(--fundoCard);  
+  background-color: var(--fundoCard);
   height: 50px;
+  box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid black;
 }
 
 .card-small p {
   flex-basis: 100%;
   font-size: 24px;
-
+  text-align: center;
 }
 
 .card-medium {
   width: 35%;
   height: 500px;
-  border: 3px solid black;
-  border-radius: 30px;  
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-flow: row wrap;  
-  
+  border-radius: 30px;
 }
 
 .card-medium img {
-  width: 100px;  
-  border-radius: 25px 0 0 0; 
+  width: 100px;
+  border-radius: 25px 0 0 0;
 }
 
 .card-medium h3 {
   font-size: 30px;
   line-height: 100px;
   flex-grow: 1;
-  text-align: center;  
-  border-radius: 0 25px 0 0; 
+  text-align: center;
+  border-radius: 0 25px 0 0;
 }
 
 .card-medium img,
 .card-medium h3 {
-  background-color: var(--fundoCard); 
-    
+  background-color: var(--fundoCard);
+
   height: 100px;
 }
 
 .card-medium p {
   flex-basis: 100%;
   font-size: 36px;
-
 }
 
-.card-house--small {}
+/* House cards */
+.card-house--small,
+.card-house--medium,
+.card-house--large {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: row wrap;
+  overflow: hidden;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: white;
+}
+
+.card-house--small {
+  width: 25%;
+  height: 340px;
+}
 
 .card-house--medium {
   width: 40%;
   height: 520px;
-  border: 3px solid black;
-  border-radius: 10px;  
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-flow: row wrap;  
-
 }
 
-.card-house--medium img {
+.card-house--large {
+  width: 80%;
+  height: 600px;
+}
+
+.card-house--small img,
+.card-house--small p,
+.card-house--medium img,
+.card-house--medium p,
+.card-house--large img,
+.card-house--large p {
   flex-basis: 100%;
-  width: 100%;
+  text-align: center;
+}
+
+.card-house--small img {
+  height: 50%;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease-out;
+}
+
+.card-house--medium img,
+.card-house--large img {
   height: 70%;
-  border-radius: 8px 8px 0 0;  
-  box-shadow: 0 0 10px black;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease-out;
 }
 
-.card-house--medium p:first-of-type {
+.card-house--small img:hover,
+.card-house--medium img:hover,
+.card-house--large img:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 1s ease-out;
+}
+
+.card-house--small p,
+.card-house--medium p,
+.card-house--large p {
+  font-size: 24px;
+  z-index: 2;
+  background-color: white;
+}
+
+.card-house--small p {
+  height: 15%;
+  line-height: 2.5;
+}
+.card-house--medium p,
+.card-house--large p {
+  height: 7.5%;
+  line-height: 2;
+}
+
+.card-house--small p:first-of-type,
+.card-house--medium p:first-of-type,
+.card-house--large p:first-of-type {
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 30px;
+  text-decoration: underline;
 }
 
-.card-house--large {}
+.card-house--small p:first-of-type {
+  height: 20%;
+}
 
+.card-house--medium p:first-of-type,
+.card-house--large p:first-of-type {
+  height: 15%;
+  line-height: 3;
+}
 
 /* Images classes */
 
 .img-full {
-  width: 100%;  
+  width: 100%;
 }
 
-.img-left {}
+.img-left {
+}
 
-.img-right {}
+.img-right {
+}
 
 /* article classes */
 .article-full {
@@ -335,26 +459,49 @@
   position: relative;
 }
 
+.article-items {
+  padding: 53px;
+}
+
 /* dialog box */
 
-.card-floating--left {
+.card-floating--left,
+.card-floating--right,
+.card-floating--center {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  border-radius: 10px;
   width: 300px;
   height: 300px;
-  position: absolute;
+  padding: 20px 5px;
+  text-align: center;
+}
+
+.card-floating--left h3,
+.card-floating--right h3,
+.card-floating--center h3 {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.card-floating--left p,
+.card-floating--right p,
+.card-floating--center p {
+}
+
+.card-floating--center {
+  top: 300px;
+  right: 200px;
+}
+
+.card-floating--left {
   top: 300px;
   left: 200px;
-  background-color: var(--fundoCard);
-  border-radius: 10px;
 }
 
 .card-floating--right {
-  width: 300px;
-  height: 300px;
-  position: absolute;
   top: 300px;
   right: 200px;
-  background-color: var(--fundoCard);
-  border-radius: 10px;
 }
 
 .box-paddin {
