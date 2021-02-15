@@ -85,16 +85,18 @@
   width: 100%;
   background-color: var(--logoAzulEscuro);
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  height: 150px;
+  min-height: 150px;
 }
 
 .title-banner h2,
 .title-banner p {
   color: white;
   text-align: center;
+  flex-basis: 100%;
+  margin: 20px auto;
 }
 
 /* um pouco de espaco pra o titulo que vier depois do banner */
@@ -104,7 +106,7 @@
 .card-house--small + .title-center,
 .card-house--medium + .title-center,
 .card-house--large + .title-center {
-  margin-top: 80px;
+  /*margin-top: 80px; --disabled*/
 }
 
 /* paragrafos */
@@ -269,7 +271,11 @@ ul.lista-grande {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
-  margin: 50px auto;
+  margin: 20px auto;
+}
+
+.card-container > div {
+  margin: 20px;
 }
 
 .card-small,
@@ -363,25 +369,33 @@ ul.lista-grande {
 .card-house--small {
   width: 25%;
   height: 340px;
+  flex-basis: 315px;
 }
 
 .card-house--medium {
   width: 40%;
   height: 520px;
+  flex-basis: 500px;
 }
 
 .card-house--large {
-  width: 80%;
+  flex-basis: 92%;
   height: 600px;
+  align-items: center;
 }
 
 .card-house--small img,
 .card-house--small p,
 .card-house--medium img,
-.card-house--medium p,
-.card-house--large img,
-.card-house--large p {
+.card-house--medium p {
   flex-basis: 100%;
+  text-align: center;
+}
+.card-house--large img {
+  flex-basis: 100%;
+}
+.card-house--large p {
+  flex-basis: 33.333%;
   text-align: center;
 }
 
@@ -391,9 +405,14 @@ ul.lista-grande {
   transition: transform 0.5s ease-out;
 }
 
-.card-house--medium img,
-.card-house--large img {
+.card-house--medium img {
   height: 70%;
+  transform: scale(1, 1);
+  transition: transform 0.5s ease-out;
+}
+
+.card-house--large img {
+  height: 90%;
   transform: scale(1, 1);
   transition: transform 0.5s ease-out;
 }
@@ -422,6 +441,11 @@ ul.lista-grande {
   height: 7.5%;
   line-height: 2;
 }
+.card-house--large p {
+  height: 10%;
+  line-height: 2;
+  font-size: 30px;
+}
 
 .card-house--small p:first-of-type,
 .card-house--medium p:first-of-type,
@@ -439,6 +463,12 @@ ul.lista-grande {
 .card-house--large p:first-of-type {
   height: 15%;
   line-height: 3;
+}
+
+.card-house--large p:first-of-type {
+  height: 10%;
+  line-height: 1.5;
+  font-size: 40px;
 }
 
 /* Images classes */

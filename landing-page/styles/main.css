@@ -145,10 +145,16 @@ body {
 }
 
 .logo {
-  width: 211px;
+  width: 267px;
   height: 70px;
 }
 
+.menu-hidden {
+  display: none;
+  width: 40%;
+  height: 50px;
+  font-size: 40px;
+}
 .menu {
   width: 50%;
 }
@@ -238,6 +244,7 @@ article:nth-of-type(even) {
 
 .network {
   margin: 20px auto;
+
 }
 
 .company-data p {
@@ -286,10 +293,4 @@ article:nth-of-type(even) {
   box-shadow: 0 0 10px black;
   margin-bottom: 40px;
   border-radius: 10px;
-}
-
-@media screen and (max-width: 400px) {
-  form {
-    width: 80%;
-  }
 }

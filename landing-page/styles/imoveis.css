@@ -15,6 +15,7 @@ article:first-of-type .card-container {
   display: grid;
   grid: repeat(4, 1fr) / repeat(4, 1fr);
   place-items: center;
+  margin-bottom: 50px;
 }
 
 .form-large label {
